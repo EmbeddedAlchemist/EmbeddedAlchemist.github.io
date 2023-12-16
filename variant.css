@@ -1,0 +1,36 @@
+@font-face {
+    font-family: serif;
+    src: url("华文中宋.ttf");
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url("小米兰亭Pro.ttf");
+}
+
+@media(prefers-color-scheme: light) {
+    :root {
+        --bg-color-rgb: 245, 245, 245;
+        --tx-color-rgb: 33, 33, 33;
+        --tm-color-rgb: 89, 89, 216;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --bg-color-rgb: 245, 245, 245;
+        --tx-color-rgb: 33, 33, 33;
+        --tm-color-rgb: 89, 89, 216;
+    }
+}
+
+:root {
+    --bg-color: rgb(var(--bg-color-rgb));
+    --tx-color: rgb(var(--tx-color-rgb));
+    --tm-color: rgb(var(--tm-color-rgb));
+
+    background-color: var(--bg-color);
+    color: var(--tx-color);
+
+    font-family: sans-serif;
+}
