@@ -53,5 +53,6 @@
 
 #loading_tips {
     font-size: 18px;
+    font-weight: 200;
     transition: all 0.5s;
 }
