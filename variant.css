@@ -10,9 +10,11 @@
 
 @media(prefers-color-scheme: light) {
     :root {
-        --bg-color-rgb: 245, 245, 245;
+        --bg-color-rgb: 240, 240, 240;
         --tx-color-rgb: 33, 33, 33;
         --tm-color-rgb: 89, 89, 216;
+        --cd-color-rgb: 255, 255, 255;
+        --sd-color-rgb: 200, 200, 200;
     }
 }
 
@@ -20,7 +22,9 @@
     :root {
         --bg-color-rgb: 33, 33, 33;
         --tx-color-rgb: 255, 255, 255;
-        --tm-color-rgb: 89, 89, 216;
+        --tm-color-rgb: 172, 172, 255;
+        --cd-color-rgb: 66, 66, 66;
+        --sd-color-rgb: 20, 20, 20;
     }
 }
 
@@ -28,6 +32,10 @@
     --bg-color: rgb(var(--bg-color-rgb));
     --tx-color: rgb(var(--tx-color-rgb));
     --tm-color: rgb(var(--tm-color-rgb));
+    --cd-color: rgb(var(--cd-color-rgb));
+
+    --cd-radius: 30px;
+    --cd-shadow: 0px 10px 50px rgba(var(--sd-color-rgb), 50%);
 
     background-color: var(--bg-color);
     color: var(--tx-color);
