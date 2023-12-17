@@ -18,7 +18,7 @@
 
 #loading_mask[display-flag] {
     pointer-events: initial;
-
+    z-index: 1000;
     transform: scale(1);
     opacity: 1.0;
 }
