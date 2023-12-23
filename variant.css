@@ -11,7 +11,7 @@
 @media(prefers-color-scheme: light) {
     :root {
         --bg-color-rgb: 240, 240, 240;
-        --tx-color-rgb: 33, 33, 33;
+        --tx-color-rgb: 20, 20, 20;
         --tm-color-rgb: 89, 89, 216;
         --cd-color-rgb: 255, 255, 255;
         --sd-color-rgb: 200, 200, 200;

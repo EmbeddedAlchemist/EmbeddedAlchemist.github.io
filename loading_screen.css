@@ -6,21 +6,25 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--bg-color);
+    background-color: rgba(var(--bg-color-rgb), 0%);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: scale(1.3);
-    opacity: 0;
+    transform: scale(1.6);
     pointer-events: none;
-    transition: transform 0.4s cubic-bezier(.52, 0, .77, .45), opacity 0.8s 0.3s ease;
+    transition: transform 0.4s cubic-bezier(.52, 0, .77, .45), 
+                background-color 0.8s 0.3s ease;
+    z-index: 999;
+
 }
 
 #loading_mask[display-flag] {
     pointer-events: initial;
     z-index: 1000;
     transform: scale(1);
-    opacity: 1.0;
+    background-color: rgba(var(--bg-color-rgb), 100%);
+    /* backdrop-filter: blur(1px); */
+
 }
 
 #loading_mask>#loading_text_contain {
