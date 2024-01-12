@@ -29,7 +29,7 @@ const text_switch_func = (text_arr, index) => {
 let timer_id = setTimeout(text_switch_func, 1000, tips_text, 0);
 
 window.addEventListener('load', (e) => {
-    // setTimeout(() => {
+    setTimeout(() => {
         clearTimeout(timer_id);
         text_set_func("Let's GO!")
         setTimeout(() => {
@@ -38,6 +38,6 @@ window.addEventListener('load', (e) => {
                 loading_mask.style.display = 'none';
             }, 1500);
         }, 850);
-    // }, 10000000);
+    }, 10000000);
 })
 
